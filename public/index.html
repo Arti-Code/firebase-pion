@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PION</title>
+</head>
+
+<body>
+  <div id="message">
+    <h2>PION</h2>
+  </div>
+  Browser Session Description<br />
+  <textarea id="localSessionDescription" readonly="true" cols="80"></textarea> <br />
+  
+  Golang Session Description<br />
+  <textarea id="remoteSessionDescription" cols="80"> </textarea> <br/>
+  <button onclick="window.startSession()"> Start Session </button><br />
+  
+  <br />
+  
+  Video<br />
+  <div id="remoteVideos"></div> <br />
+  
+  Logs<br />
+  <div id="div"></div>
+
+  <script src="/__/firebase/9.9.2/firebase-app-compat.js"></script>
+  <script src="/__/firebase/9.9.2/firebase-auth-compat.js"></script>
+  <script src="/__/firebase/9.9.2/firebase-database-compat.js"></script>
+  <script src="/__/firebase/init.js?useEmulator=true"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
